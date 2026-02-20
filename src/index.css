@@ -1,40 +1,31 @@
-body {
-	margin: 0;
-	padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Luckiest+Guy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+	font-family: "Luckiest Guy", cursive;
 }
 
-body,
-#root {
-	width: 100vw;
-	height: 100vh;
-	box-sizing: border-box;
+h2 {
+	font-family: "Roboto Condensed", sans-serif;
 }
 
-#root {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	width: 100vw;
-	padding: 50px 5vw;
+p {
+	font-family: "Caveat Brush", cursive;
 }
 
-#genre-section,
-#movie-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+#movie-card {
+	border: 5px solid black;
+	padding: 10px;
+	margin: 5px;
+	width: 500px;
 }
 
-.genre {
-	height: 1.6rem;
-	width: fit-content;
-	padding: 0.3rem;
-	cursor: pointer;
+.button {
+	margin: 10px;
+	background-color: cornflowerblue;
+	border-radius: 5px;
 }
 
-.movie {
-	text-align: center;
-	height: 2rem;
+.button.active {
+	background-color: black;
+	color: white;
 }
